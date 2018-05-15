@@ -1,5 +1,7 @@
 package org.abewang.chapter2;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,6 +12,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
  * @Date 2018/5/14.
  */
 public class Chapter2Test {
+    private final static Logger LOGGER = LogManager.getLogger(Chapter2Test.class);
+
     @Test
     void heapOOMTest() {
         Throwable exception = assertThrows(OutOfMemoryError.class, HeapOOM::heapOOM);
@@ -17,8 +21,16 @@ public class Chapter2Test {
     }
 
     @Test
-    void stackOverflow() {
+    void stackOverflowTest() {
         assertThrows(StackOverflowError.class, JavaVMStackSOF::javaVMStackSOF);
     }
 
+    @Test
+    void directMemoryOOMTest() throws NoSuchFieldException, IllegalAccessException {
+        try {
+            DirectMemoryOOM.directMemoryOOM();
+        } catch (Exception e) {
+            LOGGER.error(e.getMessage());
+        }
+    }
 }
