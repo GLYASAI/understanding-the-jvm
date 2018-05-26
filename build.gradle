@@ -13,9 +13,9 @@ tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
 
-//test {
-//    useJUnitPlatform()
-//}
+test {
+    useJUnitPlatform()
+}
 
 dependencies {
     compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.0'
