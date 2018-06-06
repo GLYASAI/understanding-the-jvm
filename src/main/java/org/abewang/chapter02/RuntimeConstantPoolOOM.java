@@ -3,7 +3,7 @@ package org.abewang.chapter02;
 import java.util.ArrayList;
 
 /**
- * VM Args: -XX:PermSize=10M -XX MaxPermSize=10M
+ * VM Args: -XX:MetaspaceSize=2m -XX:MaxMetaspaceSize=2m
  *
  * @Author Abe
  * @Date 2018/5/14.
