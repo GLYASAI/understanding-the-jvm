@@ -1,4 +1,4 @@
-package org.abewang.chapter8;
+package org.abewang.chapter08;
 
 import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodType;

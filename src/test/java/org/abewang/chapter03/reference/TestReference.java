@@ -1,4 +1,4 @@
-package org.abewang.chapter3.reference;
+package org.abewang.chapter03.reference;
 
 import org.junit.jupiter.api.Test;
 

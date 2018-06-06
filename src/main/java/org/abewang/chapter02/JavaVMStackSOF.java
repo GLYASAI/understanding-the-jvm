@@ -1,4 +1,4 @@
-package org.abewang.chapter2;
+package org.abewang.chapter02;
 
 /**
  * VM Args: -Xss128k

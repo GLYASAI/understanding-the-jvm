@@ -1,4 +1,4 @@
-package org.abewang.chapter2;
+package org.abewang.chapter02;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

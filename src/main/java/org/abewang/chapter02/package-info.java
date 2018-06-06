@@ -4,4 +4,4 @@
  * @Author Abe
  * @Date 2018/5/14.
  */
-package org.abewang.chapter2;
+package org.abewang.chapter02;

@@ -1,4 +1,4 @@
-package org.abewang.chapter8;
+package org.abewang.chapter08;
 
 /**
  * javap -verbose Calc, 输出附加信息
