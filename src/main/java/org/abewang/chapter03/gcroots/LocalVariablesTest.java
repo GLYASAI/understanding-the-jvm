@@ -2,16 +2,17 @@ package org.abewang.chapter03.gcroots;
 
 /**
  * 局部变量作为GC Roots
+ * -Xms1024m -Xmx1024m -Xmn512m -XX:+PrintGCDetails
  *
  * @Author Abe
  * @Date 2018/6/8.
  */
-public class LocalVariablesGCRootsTest {
+public class LocalVariablesTest {
     private static final int _10MB = 10 * 1024 * 1024;
     private byte[] memory = new byte[8 * _10MB];
 
     public static void method() {
-        LocalVariablesGCRootsTest instance = new LocalVariablesGCRootsTest();
+        LocalVariablesTest instance = new LocalVariablesTest();
         System.gc();
         System.out.println("第一次GC完成");
     }
